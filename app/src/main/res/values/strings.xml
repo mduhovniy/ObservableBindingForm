@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ObservableBindingForm</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+</resources>
