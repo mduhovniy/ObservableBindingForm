@@ -17,9 +17,4 @@ public class MainActivity extends AppCompatActivity {
         binding.setUser(new User());
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        binding = null;
-    }
 }

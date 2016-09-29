@@ -6,9 +6,6 @@ import android.databinding.BindingAdapter;
 import android.text.Editable;
 import android.text.TextWatcher;
 
-/**
- * Created by maximduhovniy on 29/09/2016.
- */
 
 public class User extends BaseObservable {
     private String firstName = "";
