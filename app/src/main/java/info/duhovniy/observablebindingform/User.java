@@ -13,9 +13,9 @@ public class User extends BaseObservable {
 
     @Bindable
     public String getFormattedName() {
-        return firstName
+        return "Hello " + firstName
                 + ((firstName.isEmpty() || lastName.isEmpty()) ? "" : ", ")
-                + lastName;
+                + lastName + "!";
     }
 
     public final TextWatcher firstNameChanged = new TextWatcher() {
