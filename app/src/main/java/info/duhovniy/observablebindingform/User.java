@@ -25,27 +25,31 @@ public class User extends BaseObservable {
 
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
-
+            firstName = s.toString();
+            notifyPropertyChanged(info.duhovniy.observablebindingform.BR.formattedName);
         }
 
         @Override
         public void afterTextChanged(Editable s) {
-            firstName = s.toString();
-            notifyPropertyChanged(BR.formattedName);
+
         }
     };
 
     public final TextWatcher lastNameChanged = new TextWatcher() {
         @Override
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
 
         @Override
-        public void onTextChanged(CharSequence s, int start, int before, int count) {}
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+            lastName = s.toString();
+            notifyPropertyChanged(info.duhovniy.observablebindingform.BR.formattedName);
+        }
 
         @Override
         public void afterTextChanged(Editable s) {
-            lastName = s.toString();
-            notifyPropertyChanged(BR.formattedName);
+
 
         }
     };
